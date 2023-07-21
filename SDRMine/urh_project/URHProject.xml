@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<UniversalRadioHackerProject description="" collapse_project_tabs="0" modulation_was_edited="1" broadcast_address_hex="ffff">
+  <modulators>
+    <modulator carrier_freq_hz="10.0" carrier_amplitude="1.0" carrier_phase_deg="0.0" samples_per_symbol="200000" name="Modulator" gauss_bt="0.5" gauss_filter_width="1.0" sample_rate="2000000.0" modulation_type="ASK" index="0" parameters="0.0,100.0" bits_per_symbol="1"/>
+  </modulators>
+  <device_conf>
+    <bandwidth>1000000.0</bandwidth>
+    <frequency>433920000.0</frequency>
+    <gain>20</gain>
+    <name>USRP</name>
+    <sample_rate>1000000.0</sample_rate>
+  </device_conf>
+  <simulator_rx_conf/>
+  <simulator_tx_conf/>
+  <group name="New Group" id="0"/>
+  <protocol>
+    <decodings>
+      <decoding>'Non Return To Zero (NRZ)', </decoding>
+      <decoding>'Non Return To Zero + Invert', 'Invert', </decoding>
+      <decoding>'Manchester I', 'Edge Trigger', </decoding>
+      <decoding>'Manchester II', 'Edge Trigger', 'Invert', </decoding>
+      <decoding>'Differential Manchester', 'Edge Trigger', 'Differential Encoding', </decoding>
+    </decodings>
+    <participants>
+      <participant name="Alice" shortname="A" address_hex="" color_index="0" id="f5743799-1391-4edc-933a-5a17b54577a4" relative_rssi="0" simulate="0"/>
+      <participant name="Bob" shortname="B" address_hex="" color_index="1" id="f0f8e5a1-e201-4f39-8175-a81aaf17ec0d" relative_rssi="1" simulate="0"/>
+    </participants>
+    <messages/>
+    <message_types>
+      <message_type name="Default" id="c0ac7abe-1830-4b41-a67d-5b75eb96dabf" assigned_by_ruleset="0" assigned_by_logic_analyzer="0">
+        <ruleset mode="0"/>
+      </message_type>
+    </message_types>
+  </protocol>
+  <simulator_config>
+    <items/>
+  </simulator_config>
+</UniversalRadioHackerProject>
